@@ -1,13 +1,34 @@
+/*  
+  Global styles for the entire webpage's <body> element.
+  This resets default margin and sets a clean, modern font stack for consistent appearance across devices.
+*/
+
 body {
-  margin: 0;
+  margin: 0;  
+  /* Remove the default margin that browsers add, so layout starts flush against viewport edges */
+
+  /* 
+    Set an efficient, system-friendly font stack starting with Apple, Google, Microsoft, and common fonts.
+    This helps the webpage text look native and smooth on most platforms and devices.
+  */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+
+  /* Enable smooth font rendering on WebKit browsers (Safari, Chrome) */
   -webkit-font-smoothing: antialiased;
+
+  /* Enable grayscale font smoothing on Mozilla browsers (Firefox on macOS) */
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* 
+  Styling for inline code blocks (<code> elements).
+  Uses monospaced fonts for clarity in displaying code or technical content.
+*/
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  /* Monospace fonts ensure characters align evenly, which improves readability of code snippets */
 }

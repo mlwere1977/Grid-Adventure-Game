@@ -1,0 +1,59 @@
+/* 
+  ContactForm.module.css
+
+  A contact form component is styled by this CSS module.
+   It centers the form container and uses a responsive and user-friendly design for the inputs, textarea, error messages, and submit button.
+   The form's elements are arranged vertically using Flexbox, and the button's hover provides clear visual feedback.
+*/
+
+/* Container to center the form and set max width */
+.container {
+  max-width: 500px; /* Limit width to 500px for readability */
+  margin: 0 auto; /* Center horizontally with automatic margins */
+  font-family: Arial, sans-serif; /* Clean, sans-serif font for readability */
+}
+
+/* Form styled as a vertical flex container */
+.form {
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack form elements vertically */
+}
+
+/* Shared styles for inputs and textarea */
+.input, .textarea {
+  width: 100%; /* Full width inside container */
+  padding: 8px; /* Comfortable padding inside fields */
+  font-size: 1rem; /* Readable font size */
+  border: 1px solid #ccc; /* Light gray border for inputs */
+  border-radius: 4px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Textarea specific styles */
+.textarea {
+  resize: vertical; /* Allow vertical resizing only */
+}
+
+/* Error message styling */
+.error {
+  color: red; /* Use red to highlight errors */
+  font-size: 0.9rem; /* Slightly smaller font for error text */
+  margin-top: 4px; /* Space above error text */
+}
+
+/* Submit button styles */
+.button {
+  background-color: #007bff; /* Primary blue background */
+  color: white; /* White text for contrast */
+  border: none; /* Remove default border */
+  padding: 10px; /* Comfortable padding */
+  font-size: 1.1rem; /* Slightly larger font */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-top: 10px; /* Space above button */
+}
+
+/* Button hover effect */
+.button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

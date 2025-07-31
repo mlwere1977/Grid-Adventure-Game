@@ -1,38 +1,51 @@
+/* 
+  Styles related to the main App component.
+  This includes layout alignment, logo animation, header styling, and responsive behaviors.
+*/
+
+/* Centers all text inside elements with the .App class */
 .App {
-  text-align: center;
+  text-align: center; /* Makes text and inline elements horizontally centered */
 }
 
+/* Styles the logo image inside the app */
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 40vmin;          /* Sets logo size relative to viewport for responsiveness */
+  pointer-events: none;    /* Disables mouse interactions on the logo (it's just decoration) */
 }
 
+/* Animation is only enabled for users who have NOT requested reduced motion preferences */
+/* This respects accessibility settings to avoid motion-triggered discomfort */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 20s linear; /* Spins the logo endlessly, smoothly over 20 seconds */
   }
 }
 
+/* Styles for the app's header section */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #282c34;       /* Dark background color for contrast and modern feel */
+  min-height: 100vh;               /* Full viewport height so header fills the screen vertically */
+  display: flex;                   /* Enables Flexbox for easy layout alignment */
+  flex-direction: column;          /* Stacks child elements vertically */
+  align-items: center;             /* Horizontally centers children inside header */
+  justify-content: center;         /* Vertically centers children inside header */
+  font-size: calc(10px + 2vmin);  /* Dynamically sets font size based on viewport size for accessibility */
+  color: white;                   /* White text for good contrast against dark background */
 }
 
+/* Styles for links inside the app */
 .App-link {
-  color: #61dafb;
+  color: #61dafb; /* Bright pastel blue that matches React branding, clearly visible */
 }
 
+/* Defines the keyframes for the logo spinning animation */
+/* Smooth rotation from 0 to 360 degrees */
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* Start rotation at zero degrees */
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg); /* End rotation at full circle */
   }
 }
