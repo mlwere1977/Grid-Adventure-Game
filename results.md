@@ -15,7 +15,7 @@
 
 *Player starts at the top-left corner, obstacles marked by mountains, goal is at bottom-right.*
 
-![alt text](image.png)
+![alt text](image-1.png)
 
 ---
 
@@ -23,7 +23,7 @@
 
 *Player emoji (😀) moving around obstacles using keyboard or arrow buttons.*
 
-![alt text](image-1.png)
+![alt text](image-2.png)
 
 ---
 
@@ -31,7 +31,7 @@
 
 *On reaching the goal, the victory message and feedback button appear centered.*
 
-![alt text](image-2.png)
+![alt text](image-3.png)
 
 ---
 
@@ -47,9 +47,9 @@
 
 *After feedback submission, the dynamically loaded contact form appears.*
 
-![alt text](image-3.png)
-
 ![alt text](image-5.png)
+
+![alt text](image.png)
 
 ---
 
